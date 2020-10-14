@@ -10,3 +10,8 @@ $('.dropdown').on("hidden.bs.dropdown", function() {
     $('.dropdown-menu.show').removeClass('show');
 });
 
+function hideSignLog() {
+    $('#SignLog').hide();
+
+  }
+

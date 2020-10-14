@@ -1,4 +1,4 @@
-/* Button Primary*/
+/* -------------------------------Button Primary-------------------------------*/
 
 .btn {
   display: inline-block;
@@ -45,7 +45,7 @@
   transform: translate(-50%);
 }
 
-/* Button secondary*/
+/* -------------------------------Button secondary-------------------------------*/
 .btn-primary {
   color: #fff;
   background-color: #531a74;
@@ -87,15 +87,14 @@
   box-shadow: 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-/*NAV BAR*/
+/*-------------------------------NAV BAR-------------------------------*/
 
 .bg-dark {
   background-color: #1b1c1d !important;
 }
 
 
-
-/* LOG IN*/
+/*------------------------------- LOG IN-------------------------------*/
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -202,7 +201,7 @@ span.psw {
   width: 50%; /* Could be more or less, depending on screen size */
 }
 
-/* SUB MENU*/
+/* -------------------------------SUB MENU -------------------------------*/
 
 .dropdown-submenu{
     position: relative;
@@ -233,7 +232,7 @@ span.psw {
     }
 }
 
-/* Dropdown Button */
+/* -------------------------------Dropdown Button -------------------------------*/
 .dropbtn {
     background-color: transparent;
     color: white;
@@ -278,6 +277,100 @@ span.psw {
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: transparent;}
 
+  /*-------------------------------BODY-------------------------------*/
+  body .body {
+    font-family: Arial;
+    padding: 50px;
+    background: #1d1a20;
+  }
+
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: #1d1a20;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-color: rgb(75, 52, 100);
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    background-color: rgb(75, 52, 100);
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 991px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+/*-------------------------------DIVIDER-------------------------------*/
+
+.wrapper
+{
+	padding-bottom: 0px;
+}
+
+.divider
+{
+	position: relative;
+  margin-top: 80px;
+  margin-bottom: -50px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: -60px;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(74, 78, 85), transparent);
+}
+
+/**/
+
+.row-cols-md-1
+{
+  padding-left: 20px;
+}
 
   /*-----------------------------------------------------------------------------------*/
 /* Change styles for span and cancel button on extra small screens */

@@ -12,3 +12,18 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover
 
 Sub Menu
 https://stackoverflow.com/questions/44467377/bootstrap-4-multilevel-dropdown-inside-navigation
+
+Center Buttons
+https://www.w3schools.com/howto/howto_css_center_button.asp
+
+Blog Layout
+https://www.w3schools.com/howto/howto_css_blog_layout.asp
+
+Cards
+https://getbootstrap.com/docs/4.5/components/card/#header-and-footer
+
+Footer
+https://mdbootstrap.com/docs/jquery/navigation/footer/#!
+
+Dividers
+https://codepen.io/Oddgson/pen/VPrYbv?__cf_chl_jschl_tk__=72a1fb552fd94e0676279fe0172d06a1e5a1bee2-1602658405-0-AS6KxIdY2q4LpVdd_bxYJc8bBMqdByTLZhtWcngLDdEBKdrlQCLarFyFq_Mhxxrbi7GqJLzi3BbFC-60pji3yFWnr7nUFvWUW0iIbRdcLiCyaF0pioLhxp_4YaQBwcS5soXjLlb_VvhY0s5FCtHCraWFRdbEDMaizH8-xkAG1opiv4QlxwSk8N-EagE7iD2J7LkAi1wBxUdIW2zP38qJ2E7DYiZm1MEyaEUIpaormUvn6tq6sgI-Zuei46dOMR8Uc5fTqaF1MwDhEzHMIohCYTjRa4m-HeEz51NH11Bq_LAlbESO0WMMuaZ-Xpnf_wyffsJV04mv7G_XPwfmhLUHCemRcqJJz4dtYHxUg3MVihmn

@@ -15,26 +15,26 @@
     <script src="/JS/Main.js"></script>
 </head>
 <header>
+  <!--Comienzo NavBar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--Side bar que aparece cuando la pantalla es menor a 992px-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         
+        <!--Titulo-->
         <a class="navbar-brand" href="#">NextGamingEvolution</a>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          
             <ul class="navbar-nav mr-auto">
+                <!--Home-->
+                <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+                  <!--Dropdown de categorias-->
+                <div class="dropdown">
+                  <button class="dropbtn">Categories</button>
+                   <div class="dropdown-content">
 
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-
-                  <div class="dropdown">
-                    <button class="dropbtn">Categories</button>
-                    <div class="dropdown-content">
-
-                      <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Action</a>
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Action</a>
                         <ul class="dropdown-menu">
                           <a class="dropdown-item" href="#">Platform games</a>
                           <a class="dropdown-item" href="#">Shooter games</a>
@@ -44,41 +44,41 @@
                           <a class="dropdown-item" href="#">Battle Royale games</a>
                           <a class="dropdown-item" href="#">Rhythm games</a>
                         </ul>
-                      </li>
+                     </li>
 
-                      <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Action Adventure</a>
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Action Adventure</a>
                         <ul class="dropdown-menu">
                           <a class="dropdown-item" href="#">Survival horror</a>
                           <a class="dropdown-item" href="#">Metroidvania</a>
                         </ul>
-                      </li>
+                     </li>
 
-                      <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Adventure</a>
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Adventure</a>
                         <ul class="dropdown-menu">
                           <a class="dropdown-item" href="#">Text adventures</a>
                           <a class="dropdown-item" href="#">Graphic adventures</a>
                           <a class="dropdown-item" href="#">Visual novels</a>
                           <a class="dropdown-item" href="#">Interactive movie</a>
                         </ul>
-                      </li>
+                     </li>
 
-                      <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Role-Playing</a>
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Role-Playing</a>
                         <ul class="dropdown-menu">
                           <a class="dropdown-item" href="#">Action RPG</a>
                           <a class="dropdown-item" href="#">MMORPG</a>
                           <a class="dropdown-item" href="#">JRPG</a>
                         </ul>
-                      </li>
+                     </li>
 
-                      <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Simulation</a>
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Simulation</a>
                         <ul class="dropdown-menu">
                           <a class="dropdown-item" href="#">Construction and management simulation</a>
                           <a class="dropdown-item" href="#">Life simulation</a>
                           <a class="dropdown-item" href="#">Vehicle simulation</a>
                         </ul>
-                      </li>
+                     </li>
 
-                      <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Strategy</a>
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Strategy</a>
                         <ul class="dropdown-menu">
                           <a class="dropdown-item" href="#">Artillery game</a>
                           <a class="dropdown-item" href="#">Auto battler</a>
@@ -87,66 +87,64 @@
                           <a class="dropdown-item" href="#">Tower defense</a>
                           <a class="dropdown-item" href="#">Turn-based strategy</a>
                         </ul>
-                      </li>
+                     </li>
 
-                      <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Sports</a>
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Sports</a>
                         <ul class="dropdown-menu">
                           <a class="dropdown-item" href="#">Racing</a>
                           <a class="dropdown-item" href="#">Sports game</a>
                           <a class="dropdown-item" href="#">Competitive</a>
                           <a class="dropdown-item" href="#">Sports-based fighting</a>
                         </ul>
-                      </li>
+                     </li>
 
-                      <a href="#">MMO</a>
-
+                     <a href="#">MMO</a>
 
                     </div>
-                  </div>
-
+                </div>
               </ul>
 
-              <form class="form-inline my-2 my-lg-1"></form>
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <!--Search Bar-->
              
-        
-          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" type="button" class="btn btn-outline-primary">LogIn</button>
-          <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" type="button" class="btn btn-outline-primary">SignUp</button>
-  
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+              <!--NOTA AGREGAR ID SignLog PARA QUE SIGN IN Y LOGIN DESAPAREZCAN-->
+              <!--Botones Log In y Sign In-->
+              <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" type="button" class="btn btn-outline-primary">LogIn</button>
+              <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" type="button" class="btn btn-outline-primary">SignUp</button>
+
+          
+          <!--Ventana modal de Log In-->
           <div id="id01" class="modal">
-          
-          <form class="modal-content animate" action="/action_page.php" method="post">
-              <div class="imgcontainer">
-              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <img src="/Images/defautimage.png" alt="Avatar" class="avatar">
-              </div>
-  
-              <div class="container">
-              <label for="uname"><b>Username or Email</b></label>
-              <input type="text" placeholder="Enter Username or Email" name="uname" required>
-  
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-              <span class="psw">Forgot <a href="#">password?</a></span>
-                  
-              <button type="button" class="btn btn-primary">Login</button>
-              <label>
-                  <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-              </div>
-  
-              <div class="container" style="background-color:#242222">
-              <button type="button" onclick="document.getElementById('id01').style.display='none'"  type="button" class="btn btn-outline-primary">Cancel</button>
-              
-              </div>
-          </form>
-          
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="/Images/defautimage.png" alt="Avatar" class="avatar">
+                </div>
+    
+                <div class="container">
+                <label for="uname"><b>Username or Email</b></label>
+                <input type="text" placeholder="Enter Username or Email" name="uname" required>
+    
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+                    
+                <button type="button" onclick="hideSignLog()" class="btn btn-primary">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                </div>
+    
+                <div class="container" style="background-color:#242222">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"  type="button" class="btn btn-outline-primary">Cancel</button>
+                </div>
+            </form>
           </div>
   
-          
+         <!--Ventana modal de Sign In--> 
           <div id="id02" class="modal">
-          
-              <form class="modal-content animate" action="/action_page.php" method="post">
+            <form class="modal-content animate" action="/action_page.php" method="post">
                   <div class="imgcontainer">
                   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                   <img src="/Images/defautimage.png" alt="Avatar" class="avatar">
@@ -162,7 +160,7 @@
                   <label for="psw"><b>Password</b></label>
                   <input type="password" placeholder="Enter Password" name="psw" required>
                       
-                  <button type="button" class="btn btn-primary center">Sign In</button>
+                  <button type="button" onclick="hideSignLog()" class="btn btn-primary center" >Sign In</button>
                   <label>
                       <input type="checkbox" checked="checked" name="remember"> Remember me
                   </label>
@@ -170,42 +168,209 @@
       
                   <div class="container" style="background-color:#242222">
                   <button type="button" onclick="document.getElementById('id02').style.display='none'"  type="button" class="btn btn-outline-primary">Cancel</button>
-                  
                   </div>
               </form>
-              </div>
+          </div>
   
           <script>
-          // Get the modal
+          // Obtener la ventana modal
           var modal = document.getElementById('id01');
           var modal2 = document.getElementById('id02');
   
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-              if (event.target == modal ) {
-                  modal.style.display = "none";
-              }
-              else
+          // Cerrar la ventana modal cuando se clickea fuera de ella
+          window.onclick = function(event) 
+          {
+            if (event.target == modal ) 
+            {
+              modal.style.display = "none";
+            }
+            else
+            {
+              if (event.target == modal2 ) 
               {
-                  if (event.target == modal2 ) 
-                  {
-                      modal2.style.display = "none";
-                  }
+                modal2.style.display = "none";
               }
-             
+            }
           }
           </script>
-
         </div>
-
-
     </nav>
-
-
 </header>
+
+
 <body>
 
+  <div class="body">
+
     
+
+      <div class="row">
+        <div class="leftcolumn">
+    
+    
+            <div class="row row-cols-1 row-cols-md-3">
+    
+              <div class="col mb-4">
+                <div class="card">
+                  <img src="/Images/defaultlandscape.png" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Texto del post</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+
+                <div class="wrapper">
+                  <div class="divider div-transparent"></div>
+                </div>
+          
+          
+               
+                  
+                  <div class="row row-cols-3 row-cols-md-1">
+                 
+                    <div class="card" style="width: 14rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+
+                  </div>
+          
+         
+
+              </div>
+    
+              <div class="col mb-4">
+                <div class="card">
+                  <img src="/Images/defaultlandscape.png" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">:D</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col mb-4">
+                <div class="card">
+                  <img src="/Images/defaultlandscape.png" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">:D</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              
+    
+            </div>
+    
+
+
+  
+  
+        </div>
+    
+    
+    
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height:100px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="fakeimg">Image</div><br>
+            <div class="fakeimg">Image</div><br>
+            <div class="fakeimg">Image</div>
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <p>Some text..</p>
+          </div>
+        </div>
+      </div>
+
+
    
+  
+
+  </div>
+
+ 
+    
+ 
+  
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+  <!-- Footer Links -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">About us</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Help</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Contact</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+    <hr class="rgba-white-light" style="margin: 0 0%;">
+
+    <!-- Grid row-->
+    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
 </body>
 </html>
