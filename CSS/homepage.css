@@ -28,6 +28,23 @@
   box-shadow: 0 0 0 0.2rem rgba(120, 47, 216, 0.5);
 }
 
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+  color: #fff;
+  background-color: #6500d9;
+  border-color: #5800cc;
+  box-shadow: 0 0 0 0.2rem rgba(132, 38, 255, 0.5);
+}
+
+.center {
+  margin: 0;
+  position: relative;
+
+  left: 50%;
+  
+  transform: translate(-50%);
+}
+
 /* Button secondary*/
 .btn-primary {
   color: #fff;
@@ -70,11 +87,12 @@
   box-shadow: 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-/**/
+/*NAV BAR*/
 
 .bg-dark {
   background-color: #1b1c1d !important;
 }
+
 
 
 /* LOG IN*/
@@ -118,7 +136,7 @@ img.avatar {
 span.psw {
   float: right;
   padding-top: 16px;
-  color: #fefefe;
+  color: #242020;
 }
 
 /* The Modal (background) */
@@ -176,6 +194,14 @@ span.psw {
   }
 }
 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
 /* SUB MENU*/
 
 .dropdown-submenu{
@@ -186,13 +212,17 @@ span.psw {
     position: absolute;
     right: 3px;
     top: 40%;
+    
 }
-.dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus .dropdown-menu{
+.dropdown-submenu:hover .dropdown-menu, 
+.dropdown-submenu:focus .dropdown-menu{
     display: flex;
     flex-direction: column;
     position: absolute !important;
     margin-top: -30px;
     left: 100%;
+    border-radius: 10px;
+    background-color: #f1f1f1;
 }
 @media (max-width: 992px) {
     .dropdown-menu{
@@ -261,12 +291,3 @@ span.psw {
   }
 }
 
-@media screen and (min-width: 992px) {
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
-  }
-}
