@@ -1,6 +1,8 @@
 # Proyecto_PW1
 
-Pagina web de videojuegos
+_Pagina web de videojuegos_
 
-MomoZV: Manuel Zuñiga
-Teb/Esteban: Nahomi Soto
+## Integrantes 🚀
+*MomoZV: Manuel Zuñiga
+*Teb/Esteban: Nahomi Soto
+
