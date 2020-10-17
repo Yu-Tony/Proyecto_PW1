@@ -36,3 +36,6 @@ https://codepen.io/elwint/pen/vGMRaB
 
 Texto sobre imagen
 https://www.w3schools.com/howto/howto_css_image_text_blocks.asp
+
+ Carousel
+ https://bootsnipp.com/snippets/dlaKM
