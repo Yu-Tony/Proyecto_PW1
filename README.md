@@ -5,6 +5,6 @@ _Pagina web de videojuegos_
 ## Integrantes 
 
 * MomoZV: Manuel Zuñiga
-* Teb/Esteban: Nahomi Soto
+* Teb/Yu-Tony: Nahomi Soto
 
 
