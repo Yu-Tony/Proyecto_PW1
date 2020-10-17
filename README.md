@@ -2,7 +2,9 @@
 
 _Pagina web de videojuegos_
 
-## Integrantes 🚀
-*MomoZV: Manuel Zuñiga
-*Teb/Esteban: Nahomi Soto
+## Integrantes 
+
+* MomoZV: Manuel Zuñiga
+* Teb/Esteban: Nahomi Soto
+
 
