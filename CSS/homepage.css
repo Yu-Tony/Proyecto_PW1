@@ -87,13 +87,120 @@
   box-shadow: 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-/*-------------------------------NAV BAR-------------------------------*/
+/*-------------------------------NAVBAR-------------------------------*/
 
 .bg-dark {
   background-color: #1b1c1d !important;
+
 }
 
+.vertical-divider { 
+  border-left: 1px solid rgb(134, 88, 207); 
+  padding-left: 10px;
+  height: 50px; 
+} 
 
+/********/
+
+
+.button {
+	display: inline-block;
+	margin: 4px 2px;
+  background-color: transparent;
+  border-radius: 10px;
+	font-size: 14px;
+	padding-left: 32px;
+  padding-right: 32px;
+	height: 45px;
+	line-height: 50px;
+	text-align: center;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color:  #ffffff;
+	text-decoration: none;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.button:hover {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: #602bc4;
+	color: rgb(255, 255, 255);
+}
+
+.search-container {
+	position: relative;
+	display: inline-block;
+	margin: 4px 2px;
+	height: 45px;
+	width: 50px;
+	vertical-align: bottom;
+}
+
+.mglass {
+	display: inline-block;
+	pointer-events: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+	position: absolute;
+	font-size: 22px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.search:focus + .searchbutton {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+  background-color: rgb(74, 13, 102);
+  border-radius: 0px;
+	color: rgb(255, 255, 255);
+}
+
+.search {
+	position: absolute;
+	left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+	background-color: white;
+	outline: none;
+	border: none;
+	padding: 0;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+}
+
+.search:focus {
+	width: 363px; /* Bar width+1px */
+	padding: 0 16px 0 0;
+}
+
+.expandright {
+	left: auto;
+	right: 49px; /* Button width-1px */
+}
+
+.expandright:focus {
+	padding: 0 0 0 16px;
+}
 /*------------------------------- LOG IN-------------------------------*/
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -278,28 +385,46 @@ span.psw {
   .dropdown:hover .dropbtn {background-color: transparent;}
 
   /*-------------------------------BODY-------------------------------*/
+  
+  @media screen and (min-width: 992px) {
   body .body {
     font-family: Arial;
-    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: #1d1a20;
   }
+  }
+
+  @media screen and (max-width: 991px) {
+    body .body {
+      font-family: Arial;
+      padding-left: 50px;
+      padding-right:50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background: #1d1a20;
+    }
+    }
 
   /* Create two unequal columns that floats next to each other */
   /* Left column */
   .leftcolumn {
     float: left;
-    width: 75%;
+    width: 65%;
   }
   
   /* Right column */
   .rightcolumn {
     float: left;
-    width: 25%;
+    width: 35%;
     padding-left: 20px;
   }
   
   /* Fake image */
   .fakeimg {
+    border-color: rgb(120, 64, 224);
     background-color: #aaa;
     width: 100%;
     padding: 20px;
@@ -311,7 +436,7 @@ span.psw {
     color: white;
     padding: 20px;
     margin-top: 20px;
-    border-color: rgb(75, 52, 100);
+    /*border-color: rgb(75, 52, 100);*/
   }
   
   /* Clear floats after the columns */
@@ -325,9 +450,24 @@ span.psw {
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: rgb(235, 225, 225);
     background-color: rgb(75, 52, 100);
     margin-top: 20px;
+  }
+
+
+  .mr-3
+  {
+    height: 100px;
+    width: 100px;
+  }
+
+  .media-body
+  {
+    color: whitesmoke;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-right: 20px;
   }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -362,15 +502,135 @@ span.psw {
 	right: 5%;
 	width: 90%;
 	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(74, 78, 85), transparent);
+	background-image: linear-gradient(to right, transparent, rgb(134, 88, 207), transparent);
 }
 
-/**/
+.div-transparent-vertical:before
+
+/*COLUMNAS*/
 
 .row-cols-md-1
 {
   padding-left: 20px;
 }
+
+/*DRAWER SOCIAL*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.icons{
+  display: inline-flex;
+}
+
+.icons a{
+  margin: 0 25px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+.icons a .layer{
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+}
+.icons a:hover .layer{
+  transform: rotate(-35deg) skew(20deg);
+}
+.icons a .layer span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.icons a .layer span.fab{
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+}
+.icons a:hover .layer span:nth-child(1){
+  opacity: 0.2;
+}
+.icons a:hover .layer span:nth-child(2){
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+.icons a:hover .layer span:nth-child(3){
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+.icons a:hover .layer span:nth-child(4){
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+.icons a:hover .layer span:nth-child(5){
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+.icons a:nth-child(1) .layer span,
+.icons a:nth-child(1) .text{
+  color: #4267B2;
+  border-color: #4267B2;
+}
+.icons a:nth-child(2) .layer span,
+.icons a:nth-child(2) .text{
+  color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+.icons a:nth-child(3) .layer span,
+.icons a:nth-child(3) .text{
+  color: #E1306C;
+  border-color: #E1306C;
+}
+.icons a:nth-child(4) .layer span,
+.icons a:nth-child(4) .text{
+  color: #2867B2;
+  border-color: #2867B2;
+}
+.icons a:nth-child(5) .layer span,
+.icons a:nth-child(5) .text{
+  color: #ff0000;
+  border-color: #ff0000;
+}
+.icons a:hover:nth-child(1) .layer span{
+  box-shadow: -1px 1px 3px #4267B2;
+}
+.icons a:hover:nth-child(2) .layer span{
+  box-shadow: -1px 1px 3px #1DA1F2;
+}
+.icons a:hover:nth-child(3) .layer span{
+  box-shadow: -1px 1px 3px #E1306C;
+}
+.icons a:hover:nth-child(4) .layer span{
+  box-shadow: -1px 1px 3px #2867B2;
+}
+.icons a:hover:nth-child(5) .layer span{
+  box-shadow: -1px 1px 3px #ff0000;
+}
+.icons a .text{
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+.icons a:hover .text{
+  bottom: -35px;
+  opacity: 1;
+}
+
 
   /*-----------------------------------------------------------------------------------*/
 /* Change styles for span and cancel button on extra small screens */
