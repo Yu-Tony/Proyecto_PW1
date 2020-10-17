@@ -33,3 +33,6 @@ https://www.codingnepalweb.com/2020/06/css3-3d-layered-hover-effect-on-social-me
 
 Search NavBar
 https://codepen.io/elwint/pen/vGMRaB
+
+Texto sobre imagen
+https://www.w3schools.com/howto/howto_css_image_text_blocks.asp

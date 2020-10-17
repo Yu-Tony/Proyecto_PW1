@@ -413,6 +413,7 @@ span.psw {
   .leftcolumn {
     float: left;
     width: 65%;
+    padding-left: 100px;
   }
   
   /* Right column */
@@ -420,6 +421,7 @@ span.psw {
     float: left;
     width: 35%;
     padding-left: 20px;
+    padding-right: 100px;
   }
   
   /* Fake image */
@@ -433,6 +435,16 @@ span.psw {
   /* Add a card effect for articles */
   .card {
     background-color: #1d1a20;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    /*border-color: rgb(75, 52, 100);*/
+  }
+
+  .popular {
+    border-width: 1px;
+    border-color:  rgb(100, 58, 177);
+    background-color: transparent;
     color: white;
     padding: 20px;
     margin-top: 20px;
@@ -462,11 +474,27 @@ span.psw {
     width: 100px;
   }
 
+  /* IMAGEN CON TEXTO ARRIBA*/
   .media-body
   {
     color: whitesmoke;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-right: 50px;
+    padding-right: 50px;
+  }
+
+  .container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
     padding-right: 20px;
   }
   
@@ -474,9 +502,25 @@ span.psw {
   @media screen and (max-width: 991px) {
     .leftcolumn, .rightcolumn {
       width: 100%;
-      padding: 0;
+      padding: 0px;
     }
+
   }
+/*----------------HORIZONTAL CAROUSEL---------------*/
+
+/****************HOVER*/
+/* Opacity #2 */
+.hover12 figure {
+	background: #5233c0;
+}
+.hover12 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover12 figure:hover img {
+	opacity: .5;
+}
 
 /*-------------------------------DIVIDER-------------------------------*/
 
@@ -526,6 +570,7 @@ span.psw {
 
 .icons{
   display: inline-flex;
+  padding-bottom: 40px;
 }
 
 .icons a{
