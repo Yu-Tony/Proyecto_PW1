@@ -38,7 +38,23 @@ Texto sobre imagen
 https://www.w3schools.com/howto/howto_css_image_text_blocks.asp
 
 Carousel
- https://bootsnipp.com/snippets/dlaKM
+https://codepen.io/FrankieDoodie/pen/gdabrR
 
 Hover Effects
 https://codepen.io/nxworld/pen/ZYNOBZ
+
+Chips
+https://www.w3schools.com/howto/howto_css_contact_chips.asp
+
+------------------------------------
+
+Comment Section
+http://lab.iamrohit.in/demos/?t=%20Comments%20App%20-%20AngularJS%20&d=%20A%20simple%20comment%20app%20usgin%20AngularJS%20&u=https://codepen.io/cesar_mejiag/pen/wKMBpP
+
+More Cards
+https://codepen.io/mrsahar/pen/jRjmdL
+
+-------------------------------------
+
+About Page Profile
+https://bootsnipp.com/snippets/pNlEa
