@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--TITULO DE PESTANA-->
-    <title>NGE</title>
+    <title>POST</title>
     <link rel="shortcut icon" href="/Images/defaultlandscape.png">
 
     <!--search link-->
@@ -275,28 +275,83 @@
         <div class="leftcolumn">
     
      
-    <div class="container">
+        <div class="container">
     
     
-      <div class="col-md-12">
-       
-        <div class="profile-card-4 text-center"><img src="https://i.imgur.com/ToVz3XI.jpg?1" class="img img-responsive">
-            <div class="profile-content">
-                <div class="profile-name">Nombre del articulo
-                    <p>Por: Escritor :D</p>
+        <div class="col-md-12">
+        
+          <div class="form-group" id="Titulo" style="text-align: center;">
+            <img class="card-img" src="https://pbs.twimg.com/media/EOTBACIUwAA6zsg.jpg" alt="..." class="img-thumbnail" style="max-width: 600px;">
+          </div>
+
+          <div class="form-group" id="Titulo" style="text-align: center;">
+            <label  style="color: blanchedalmond;">TITULO NOTICIA</label>
+          </div>
+
+          
+          
+
+          <div class="row">
+            <div class="leftcolumn">
+              <div class="form-group" id="Titulo" style="text-align: center; background-color: whitesmoke;">
+                <div>
+                  <p >blue</p>
+                  <p >red</p>
+                  <p >blue</p>
+                  <p >red</p>
+                  <p >blue</p>
+                  <p >red</p>
+
                 </div>
-                <div class="profile-description">Descripcion del post :'D</div>
-                <div class="profile-description">
-                    <p>..............</p>
-                    <p>..............</p>
-                </div>
+              </div>
     
+
             </div>
+            <div class="rightcolumn">
+              
+              <div class="form-group" id="Titulo" style="text-align: center;">
+                <img class="card-img" src="https://pbs.twimg.com/media/EOTBACIUwAA6zsg.jpg" alt="..." class="img-thumbnail" style="max-width: 600px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="leftcolumn">
+
+              <div class="form-group" id="Titulo" style="text-align: center;">
+                <img class="card-img" src="https://pbs.twimg.com/media/EOTBACIUwAA6zsg.jpg" alt="..." class="img-thumbnail" style="max-width: 200px;">
+              </div>
+              </div>
+              <div class="rightcolumn">
+                <div class="form-group" id="Titulo" style=" background-color: whitesmoke;">
+                  <div>
+                    <p >blue</p>
+                    <p >red</p>
+                    <p >blue</p>
+                    <p >red</p>
+                    <p >blue</p>
+                    <p >red</p>
+                    
+                  </div>
+                
+              </div>
+            </div>
+            </div>
+          
+
+
+
         </div>
-    </div>
-      </div>
+
+        </div>
    
         <!--COMMENTS SECTION-->
+        <div class="col-md-12">
+          
+        </div>
+
+
+
         <div class="comments-app" ng-app="commentsApp" ng-controller="CommentsController as cmntCtrl">
           
             
@@ -360,7 +415,7 @@
 
                       <div class="comment-actions">
                         <a href="#">Reply</a>
-                        <a href="#">Report</a>
+                        <a href="#" onclick="document.getElementById('Edit').style.display='block'">Report</a>
                       </div>
   
                      
@@ -425,10 +480,111 @@
                   </div>
                 </div>
               </div>
+
+               <!--Ventana modal de Log In-->
+
+      <div id="Edit" class="modal">
+      <form class="modal-content2 animate" action="/action_page.php" method="post">
+          <div class="container">
+          <span onclick="document.getElementById('Edit').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+  
+          <div class="container">
+         
+            <div class="row no-gutters">
+
+            
+                <div class="card-body">
+                  
+                  <div class="text-center"> 
+
+                    <div class="container">
+
+                      <h5 class="card-title">Amonestar Usuario</h5>
+
+                      <div class="btn-group" style="margin-bottom: 30px;">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo de amonestación</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Borrar comentario</button>
+                        <button class="dropdown-item" type="button">Amonestar por un tiempo</button>
+                        </div>
+                      </div>
+
+                      <!-- IMPORTANT
+
+                                             <div class="form-group">
+                      <div class="btn-group" style="margin-bottom: 30px;">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tiempo de amonestación</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">1 día</button>
+                        <button class="dropdown-item" type="button">1 semana</button>
+                        <button class="dropdown-item" type="button">1 mes</button>
+                        <button class="dropdown-item" type="button">Permanente</button>
+                        </div>
+                      </div>
+                    </div>
+
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Razón de amonestación</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      
+                      -->
+ 
+
+                     
+
+                    </div>
+
+                </div> 
+
+                </div>
+
+          </div>
+         
+          </div>
+  
+          <div class="container" style="background-color: #242222;"> 
+  
+              
+              <div class="text-right"> 
+                <button type="button"class="btn btn-primary" >Aceptar</button> 
+                  <button type="button"class="btn btn-primary" >Cancelar</button> 
+              </div> 
+        
+  
+          </div> 
+  
+         
+      </form>
+      </div>
+  
+  
+      <script>
+          // Obtener la ventana modal
+          var modal = document.getElementById('Edit');
+          var modal2 = document.getElementById('id02');
+  
+          // Cerrar la ventana modal cuando se clickea fuera de ella
+          window.onclick = function(event) 
+          {
+            if (event.target == modal ) 
+            {
+              modal.style.display = "none";
+            }
+            else
+            {
+              if (event.target == modal2 ) 
+              {
+                modal2.style.display = "none";
+              }
+            }
+          }
+      </script>
     
             </div>
     
-          </div> 
+        </div> 
          
         </div>
 
