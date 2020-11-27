@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 /* -------------------------------Button Primary-------------------------------*/
 
 .btn {
@@ -798,6 +797,16 @@ border-radius: .5rem;
   opacity: 1;
 }
 
+
+/* EDITOR */
+
+.row.main-row {
+  background-color: rgb(39, 38, 39);  
+  margin: 10px; 
+  border: 5px solid #eee
+}
+
+
 /*-----------------------------------------------------------------------------------*/
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
@@ -809,4 +818,3 @@ border-radius: .5rem;
     width: 100%;
   }
 }
->>>>>>> Stashed changes

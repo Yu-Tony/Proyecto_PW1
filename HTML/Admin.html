@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--TITULO DE PESTANA-->
-    <title>NGE</title>
-    <link rel="shortcut icon" href="/Images/defaultlandscape.png">
+    <title>Document</title>
 
-    <!--search link-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-     <!---->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    
-    <!--CAROUSEL-->
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-    
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="/CSS/homepage.css">
-    <link rel="stylesheet" href="/CSS/news.css">
-    <script src="/JS/Main.js"></script>
+        <!--search link-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!---->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.4.95/css/materialdesignicons.css">
+       <link rel="stylesheet" href="/CSS/profile.css">
+     
+       
+       <link rel="stylesheet" type="text/css" href="/CSS/homepage.css">
+       <script src="/JS/Main.js"></script>
 </head>
-
 <body>
 
     <!--Comienzo NavBar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" style="">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <!--Side bar que aparece cuando la pantalla es menor a 992px-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -264,371 +258,170 @@
         </script>
       </div>
   </nav>
+  
+    <div class="body">
+  
 
+      <div class="container bcontent">
+          
+        <div class="card">
+              <div class="row no-gutters">
 
-  <div class="body">
+                  <div class="col-sm-5">
+                      <img class="card-img" src="https://pbs.twimg.com/media/EOTBACIUwAA6zsg.jpg" alt="..." class="img-thumbnail" style="max-width: 250px;">
+                 </div>
 
-    
-
-      <div class="row">
-        
-        <div class="leftcolumn">
-    
-     
-    <div class="container">
-    
-    
-      <div class="col-md-12">
-       
-        <div class="profile-card-4 text-center"><img src="https://i.imgur.com/ToVz3XI.jpg?1" class="img img-responsive">
-            <div class="profile-content">
-                <div class="profile-name">Nombre del articulo
-                    <p>Por: Escritor :D</p>
-                </div>
-                <div class="profile-description">Descripcion del post :'D</div>
-                <div class="profile-description">
-                    <p>..............</p>
-                    <p>..............</p>
-                </div>
-    
-            </div>
-        </div>
-    </div>
-      </div>
-   
-        <!--COMMENTS SECTION-->
-        <div class="comments-app" ng-app="commentsApp" ng-controller="CommentsController as cmntCtrl">
-          
-            
-            <!-- ADD COMMENT -->
-            <div class="comment-form">
-              <!-- Comment Avatar -->
-              <div class="comment-avatar">
-                <img src="http://lorempixel.com/200/200/people">
-              </div>
-          
-              <form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" novalidate>
-                <div class="form-row">
-                  <textarea
-                            class="input"
-                            ng-model="cmntCtrl.comment.text"
-                            placeholder="Add comment..."
-                            required></textarea>
-                </div>
-          
-                <div class="form-row">
-                  <input
-                         class="input"
-                         ng-class="{ disabled: cmntCtrl.comment.anonymous }"
-                         ng-model="cmntCtrl.comment.author"
-                         ng-required="!cmntCtrl.comment.anonymous"
-                         placeholder="Nombre provicional"
-                         type="text">
-                </div>
-          
-               
-          
-                <div class="form-row">
-                  <input type="submit" value="Add Comment">
-                </div>
-                
-              </form>
-            </div>
-          
-            <!-- LISTA DE COMENTARIOS -->
-            <div class="comments">
-    
-              <!-- Comment -->
-              <div class="comment" ng-repeat="comment in cmntCtrl.comments | orderBy: '-date'">
-                <!-- Comment Avatar -->
-                <div class="comment-avatar">
-                  <img ng-src="{{ comment.avatarSrc }}">
-                </div>
-          
-                <!-- Comment Box -->
-                <div class="comment-box">
-                  <div class="comment-text">{{ comment.text }}</div>
-                  <div class="comment-footer">
-
-                    <div class="comment-info">
-                      <span class="comment-author">
-                        <em ng-if="comment.anonymous">Anonymous</em>
-                        <a ng-if="!comment.anonymous" href="{{ comment.author }}">{{ comment.author }}</a>
-                      </span>
-                      <span class="comment-date">{{ comment.date | date: 'medium' }}</span>
-                    </div>
-
-                      <div class="comment-actions">
-                        <a href="#">Reply</a>
-                        <a href="#">Report</a>
+                <div class="col-sm-4">
+                      <div class="card-body">
+                          <h5 class="card-title">Qian Kun</h5>
+                          <p class="card-text">USUARIO REGISTRADO</p>
                       </div>
-  
-                     
-            
-                    
-                  </div>
+                </div>
                   
+                <div class="col-sm-3">
+                    <div class="card-body">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo de usuario</button>
+                          <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button">Administrador</button>
+                          <button class="dropdown-item" type="button">Moderador</button>
+                          <button class="dropdown-item" type="button">Editor</button>
+                          <button class="dropdown-item" type="button">CC</button>
+                          <button class="dropdown-item" type="button">Registrado</button>
+                          </div>
+                        </div>
+                    </div>
                 </div>
 
               </div>
-          
-              <!-- Comment - Dummy -->
-              <div class="comment">
-                <!-- Comment Avatar -->
-                <div class="comment-avatar">
-                  <img src="http://gravatar.com/avatar/412c0b0ec99008245d902e6ed0b264ee?s=80">
-                </div>
-          
-                <!-- Comment Box -->
-                <div class="comment-box">
-                  <div class="comment-text">He dormido un total de 9 horas en los ultimos dos dias, send help</div>
-                  <div class="comment-footer">
-                    <div class="comment-info">
-                      <span class="comment-author">
-                        <a href="mailto:">Teb</a>
-                      </span>
-                      <span class="comment-date">Oct 18, 2020 04:09:04 AM</span>
-                    </div>
-          
-                    <div class="comment-actions">
-                      <a href="#">Reply</a>
-                      <a href="#">Report</a>
-                    </div>
-                   
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Comment - Dummy -->
-              <div class="comment">
-                <!-- Comment Avatar -->
-                <div class="comment-avatar">
-                    <img src="http://gravatar.com/avatar/412c0b0ec99008245d902e6ed0b264ee?s=80">
-                </div>
-          
-                <!-- Comment Box -->
-                <div class="comment-box">
-                  <div class="comment-text">Stream make a wish https://www.youtube.com/watch?v=tyrVtwE8Gv0</div>
-                  <div class="comment-footer">
-                    <div class="comment-info">
-                      <span class="comment-author">
-                        <a href="mailto:">Teb</a>
-                      </span>
-                      <span class="comment-date">Jan 31, 1986 11:32:04 PM</span>
-                    </div>
-          
-                    <div class="comment-actions">
-                      <a href="#">Reply</a>
-                      <a href="#">Report</a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-    
-            </div>
-    
-          </div> 
-         
         </div>
 
+        <div class="card">
+            <div class="row no-gutters">
 
-    
-        <div class="rightcolumn">
+                <div class="col-sm-5">
+                    <img class="card-img" src="https://pbs.twimg.com/media/EOTBACIUwAA6zsg.jpg" alt="..." class="img-thumbnail" style="max-width: 250px;">
+               </div>
 
-          <div class="card popular">
-            <h3>Popular Post</h3>
-
-      
-
-            <div class="container">
-              <div class="hover02 column">
-                <div>
-                  <figure><img src="https://i.imgur.com/BSFFltz.png" class="card-img-top" alt="image"></figure>
-                </div>
+              <div class="col-sm-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Qian Kun</h5>
+                        <p class="card-text">USUARIO REGISTRADO</p>
+                    </div>
               </div>
-              <div class="text-block" style="background-color: transparent;">
-                <h4>Nature</h4>
-                <p>What a beautiful sunrise</p>
-              </div>
-            </div>
-
-         
-            <div class="wrapper">
-              <div class="divider div-transparent"></div>
-            </div>
- 
-
-            <div class="container">
-              <div class="hover02 column">
-                <div>
-                  <figure><img src="https://i.imgur.com/Pl71q3n.png?1" class="card-img-top " alt="image"></figure>
-                </div>
-              </div>              <div class="text-block" style="background-color: transparent;">
-                <h4>Nature</h4>
-                <p>What a beautiful sunrise</p>
-              </div>
-            </div>
-
-         
-            <div class="wrapper">
-              <div class="divider div-transparent"></div>
-            </div>
-
-            <div class="container">
-              <div class="hover02 column">
-                <div>
-                  <figure><img src="https://i.imgur.com/dOnEOcF.jpg?1" class="card-img-top " alt="image"></figure>
-                </div>
-              </div>              
-              <div class="text-block" style="background-color: transparent; color:">
-                <h4>Nature</h4>
-                <p>What a beautiful sunrise</p>
-              </div>
-            </div>
-            
-          </div>
-
-          <div class="card">
-            <h3>Follow NGE</h3>
-            
-            <div class="icons" style="margin-top: 25px;">
-              
-              <a href="#">
-                <div class="layer">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="fab fa-facebook-f"></span>
-                </div>
-              <div class="text"> Facebook</div>
-              </a>
-  
-              <a href="#">
-                <div class="layer">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="fab fa-twitter"></span>
-                </div>
-                <div class="text">Twitter</div>
-              </a>
-  
-  
-            </div>
-  
-            <div class="icons" style="margin-top: 25px;">
-           
-              <span></span>
-                  <span></span>
                 
-              <a href="#">
-                <div class="layer">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="fab fa-youtube"></span>
-                </div>
-                <div class="text">YouTube</div>
-              </a>
-  
-              <a href="#">
-                <div class="layer" >
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="fab fa-instagram"></span>
-                </div>
-                <div class="text"> Instagram</div>
-              </a>
-  
-  
+              <div class="col-sm-3">
+                  <div class="card-body">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo de usuario</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Administrador</button>
+                        <button class="dropdown-item" type="button">Moderador</button>
+                        <button class="dropdown-item" type="button">Editor</button>
+                        <button class="dropdown-item" type="button">CC</button>
+                        <button class="dropdown-item" type="button">Registrado</button>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
             </div>
-  
-          </div>
-  
-          <div class="card">
-            <h3>Tags</h3>
-  
-            <button class="button-tag button4">Among Us</button>
-            <button class="button-tag button4">Fall Guys</button>
-            <button class="button-tag button4">ETC</button>
-            <button class="button-tag button4">ETC</button>
-        
-  
-          </div>
-  
-
-
         </div>
 
+        <div class="card">
+          <div class="row no-gutters">
 
- 
+              <div class="col-sm-5">
+                  <img class="card-img" src="https://pbs.twimg.com/media/EOTBACIUwAA6zsg.jpg" alt="..." class="img-thumbnail" style="max-width: 250px;">
+             </div>
+
+            <div class="col-sm-4">
+                  <div class="card-body">
+                      <h5 class="card-title">Qian Kun</h5>
+                      <p class="card-text">USUARIO REGISTRADO</p>
+                  </div>
+            </div>
+              
+            <div class="col-sm-3">
+                <div class="card-body">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo de usuario</button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                      <button class="dropdown-item" type="button">Administrador</button>
+                      <button class="dropdown-item" type="button">Moderador</button>
+                      <button class="dropdown-item" type="button">Editor</button>
+                      <button class="dropdown-item" type="button">CC</button>
+                      <button class="dropdown-item" type="button">Registrado</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
         
       </div>
 
-      
-
-  </div>
-
-
-
-<!-- Footer -->
-<footer class="page-footer font-small">
-
-  <!-- Footer Links -->
-  <div class="container">
-
-    <!-- Grid row-->
-    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">MOST COMMENTED</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
-
-
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">LATEST</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">CATEGORIES</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
-
+  
     </div>
-
-    <!-- Grid row-->
-    <hr class="rgba-white-light" style="margin: 0 0%;">
-
-    <!-- Grid row-->
-    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  
+  <!-- Footer -->
+  <footer class="page-footer font-small">
+  
+    <!-- Footer Links -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">MOST COMMENTED</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">LATEST</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">CATEGORIES</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+  
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 0%;">
+  
+      <!-- Grid row-->
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+  
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
   </div>
-  <!-- Copyright -->
-</div>
-
-</footer>
-<!-- Footer -->
+  
+  </footer>
+  <!-- Footer --> 
+          
 
 </body>
 </html>
+
+
+
+
