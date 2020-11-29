@@ -270,6 +270,7 @@
 
                 <div class="container bcontent">
                     <div class="form-group" id="Titulo" style="text-align: center;">
+
                         <label  style="color: blanchedalmond;">Titulo</label>
                         <input type="email" class="form-control" placeholder="">
             
@@ -287,18 +288,53 @@
                       <label style="color: blanchedalmond; margin-top: 10px;" >Categorías</label>
                         <input class="form-control" type="text" placeholder="Default input">
             
-            
+                        <div class="form-group" id="Titulo" style="text-align: left;">
+                          <label  style="color: blanchedalmond;">*Las categorías deben ir separadas por una coma ","</label>
                       </div>
 
-                      <div class="form-group" id="Titulo" style="text-align: left;">
-                        <label  style="color: blanchedalmond;">*Las categorías deben ir separadas por ua coma ","</label>
-                    </div>
+                      <label style="color: blanchedalmond; margin-top: 10px;" >Añadir archivos</label>
+
+                    <div class="col-md-12" style="margin: 15px;">
+                                  
+                      <label style="color: blanchedalmond; margin-top: 10px;" >Añadir imagen desde el ordenador</label>
                       
-                      <button type="button" class="btn btn-primary">Cargar imagen</button>
-                      <button type="button" class="btn btn-primary">Cargar video</button>
+                      <input id="input-b2" name="input-b2" type="file" class="file btn btn-primary" data-show-preview="false">
+                      
+                    
+                    </div>
+
+                    <form>
+                      <div class="input-group mb-3">
+                        <label style="color: blanchedalmond; margin: 10px;" >Añadir imagen desde web</label>
+                        <input type="text" class="form-control" placeholder="Ej. https://wallpaperaccess.com/full/2577782.jpg">
+
+                        <div class="input-group-prepend">
+                          <button class="btn btn-primary" style="margin-left: 10px;" type="button">Subir</button>
+                        </div>
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <label style="color: blanchedalmond; margin: 10px;" >Añadir video desde web</label>
+                        <input type="text" class="form-control" placeholder="Ej. https://www.youtube.com/watch?v=T1DhaFkT57k">
+
+                        <div class="input-group-prepend">
+                          <button class="btn btn-primary" style="margin-left: 10px;" type="button">Subir</button>
+                        </div>
+                      </div>
+
+                    </form>
+
             
-            
+                      </div>
                   </div>
+
+                  <div class="form-group" style="margin: 15px; text-align: center;">
+ 
+                      <button class="btn btn-outline-primary" style="margin-left: 10px;" type="button">Enviar Noticia</button>
+ 
+                  </div>
+
+                 
             </div>
 
             <div class="rightcolumn">
