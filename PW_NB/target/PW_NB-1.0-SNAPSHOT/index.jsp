@@ -4,10 +4,15 @@
     Author     : Nahomi Soto
 --%>
 
-<%@page import="pw.controllers.UserControllerLogIn" %>
-<%@page import="pw.models.usuarioModel" %>
-
+<%@page import="java.util.List"%>
+<%@page import="pw.models.noticiaModel"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<% 
+
+List<noticiaModel> noticia =(List<noticiaModel>)request.getAttribute("RecentNews");
+%>
+
+ 
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,7 +20,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--TITULO DE PESTANA-->
+        
         <title>MAIN</title>
+        
         <link rel="shortcut icon" href="/Images/defaultlandscape.png">
 
         <!--search link-->
@@ -54,22 +61,16 @@
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
+                        </ol>      
+                        
                             <div class="carousel-item active">
-                                <img src="https://i.imgur.com/lL7NceL.png"  class="d-block w-100" alt="...">
+                                <img src="https://i.imgur.com/z3gKpsg.png"  class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h2> Lo mas nuevo en LoL</h2>
                                     <p>Mira lo mas reciente League of Legends</p>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/z3gKpsg.png"  class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h2>Lo mas nuevo en LoL</h2>
-                                    <p>Mira lo mas reciente League of Legends</p>
-                                </div>
-                            </div>
+                            </div> 
+                          
                             <div class="carousel-item">
                                 <img src="https://i.imgur.com/kcY6Fp2.jpg?1"  class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
@@ -77,7 +78,15 @@
                                     <p>Mira lo mas reciente League of Legends</p>
                                 </div>
                             </div>
-                        </div>
+                        
+                            <div class="carousel-item">
+                                <img src="https://i.imgur.com/kcY6Fp2.jpg?1"  class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Lo mas nuevo en LoL</h2>
+                                    <p>Mira lo mas reciente League of Legends</p>
+                                </div>
+                            </div>   
+
                         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
@@ -97,6 +106,7 @@
 
                         <div class="col mb-4">
 
+                  
                             <div class="card">
 
 
@@ -107,7 +117,7 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">Card titulo</h5>
                                     <p class="card-text">Texto del post</p>
                                 </div>
                                 <div class="card-footer">

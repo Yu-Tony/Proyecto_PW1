@@ -24,6 +24,38 @@ import java.util.logging.Logger;
 public class userDAO {
    
       
+    
+     public static int insertUser(usuarioModel user) {
+        try {
+            Connection con = dbConnection.getConnection();
+            // En el proyecto solo podran hacer uso de Store Procedures
+            // No llamadas directas como esta
+            // Esta linea prepara la llamada a la base de datos para insertar
+            // Cada ? significa un valor a ser remplazado
+            CallableStatement statement = con.prepareCall("INSERT INTO Usuario (username,email, nombre_publico, contraseña, foto_perfil, usertype, fb, twt, insta) VALUES (?,?,?,?,?,?,?,?,?)");
+          
+            statement.setString(1, user.getUsername());
+            statement.setString(2, user.getEmail());
+            
+            statement.setString(3, user.getNombre_publico());
+            statement.setString(4, user.getContraseña());
+            statement.setString(5, user.getFoto_perfil());
+            statement.setInt(6, user.getUsertype());
+            statement.setString(7, user.getFb());
+            statement.setString(8, user.getTwt());
+            statement.setString(9, user.getInsta());
+            
+              
+            // Ejecuta el Statement y retorna cuantos registros
+            // fueron actualizados
+            return statement.executeUpdate();
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+        }
+        return 0;
+    }
+
     public static List<usuarioModel> getUsers() {
         List<usuarioModel> users = new ArrayList<>();
         try {

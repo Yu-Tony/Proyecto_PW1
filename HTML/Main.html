@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--TITULO DE PESTANA-->
-    <title>NGE</title>
+    <title>MAIN</title>
     <link rel="shortcut icon" href="/Images/defaultlandscape.png">
 
     <!--search link-->
@@ -28,7 +28,7 @@
 <body>
 
     <!--Comienzo NavBar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" style="">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" >
       <!--Side bar que aparece cuando la pantalla es menor a 992px-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -164,8 +164,26 @@
             <!--NOTA AGREGAR ID SignLog PARA QUE SIGN IN Y LOGIN DESAPAREZCAN AL INGRESAR-->
             <!--Botones Log In y Sign In-->
 
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" type="button" class="btn btn-outline-primary">LogIn</button>
+           <!--
+             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" type="button" class="btn btn-outline-primary">LogIn</button>
             <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" type="button" class="btn btn-outline-primary">SignUp</button>
+           --> 
+
+           <!--
+            <span class="navbar-text white-text">NOMBRE DE USUARIO </span>
+           <li class="nav-item avatar dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="https://pbs.twimg.com/media/EOTBACIUwAA6zsg.jpg" class="rounded-circle z-depth-0"alt="avatar image" style="max-width: 50px;">
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+              aria-labelledby="navbarDropdownMenuLink-55">
+              <a class="dropdown-item" href="#">VER PERFIL</a>
+              <a class="dropdown-item" href="#">CERRAR SESION</a>
+            </div>
+          </li>
+           -->
+          
 
             <div class="vertical-divider"></div>
 
@@ -215,7 +233,10 @@
           <form class="modal-content animate" action="/action_page.php" method="post">
                 <div class="imgcontainer">
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="/Images/defautimage.png" alt="Avatar" class="avatar">
+                <img src="https://www.edmundsgovtech.com/wp-content/uploads/2020/01/default-picture_0_0.png" alt="Avatar" class="avatar">
+                <div class="container" >
+                  <button type="button"  type="button" class="btn  btn-primary center">Agregar Imagen</button>
+                  </div>
                 </div>
     
                 <div class="container">
@@ -227,6 +248,13 @@
     
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="socialmedia"><b>Redes Sociales</b></label>
+                <div class="container" style="display: block; margin-bottom:50px ;">
+                  <button type="button" class="btn btn-fb"><i class="fab fa-facebook-f pr-1"></i> Facebook</button>
+                  <button type="button" class="btn btn-tw"><i class="fab fa-twitter pr-1"></i> Twitter</button>
+                  <button type="button" class="btn btn-ins"><i class="fab fa-instagram pr-1"></i> Instagram</button>
+                </div>
                     
                 <button type="button" onclick="hideSignLog()" class="btn btn-primary center" >Sign In</button>
                 <label>
