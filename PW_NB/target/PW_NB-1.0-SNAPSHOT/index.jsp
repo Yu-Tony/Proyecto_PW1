@@ -4,7 +4,15 @@
     Author     : Nahomi Soto
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="pw.models.noticiaModel"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<% 
+
+List<noticiaModel> noticia =(List<noticiaModel>)request.getAttribute("RecentNews");
+%>
+
+ 
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,7 +20,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--TITULO DE PESTANA-->
+        
         <title>MAIN</title>
+        
         <link rel="shortcut icon" href="/Images/defaultlandscape.png">
 
         <!--search link-->
@@ -42,8 +52,10 @@
             </button>
 
             <!--Titulo-->
-            <a class="navbar-brand" href="#">NextGamingEvolution</a>
-
+            
+            <% for(noticiaModel element: noticia){%>
+            <a class="navbar-brand" href="#"><%= element.getTitulo()%></a>
+            <%}%>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto">
                     <!--Home-->
@@ -212,7 +224,7 @@
                     <form class="modal-content animate" action="/action_page.php" method="post">
                         <div class="imgcontainer">
                             <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Close Modal">&times;</span>
-                            <img src="/Images/defautimage.png" alt="Avatar" class="avatar">
+                            <img src="https://www.edmundsgovtech.com/wp-content/uploads/2020/01/default-picture_0_0.png" alt="Avatar" class="avatar">
                         </div>
 
                         <div class="container">
@@ -305,8 +317,6 @@
 
 
             <div class="row">
-
-
                 <!--CAROUSEL 1-->
                 <div class="container">
                     <!--   CAROUSEL       -->
@@ -315,22 +325,16 @@
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
+                        </ol>      
+                        
                             <div class="carousel-item active">
-                                <img src="https://i.imgur.com/lL7NceL.png"  class="d-block w-100" alt="...">
+                                <img src="https://i.imgur.com/z3gKpsg.png"  class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h2> Lo mas nuevo en LoL</h2>
                                     <p>Mira lo mas reciente League of Legends</p>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.imgur.com/z3gKpsg.png"  class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h2>Lo mas nuevo en LoL</h2>
-                                    <p>Mira lo mas reciente League of Legends</p>
-                                </div>
-                            </div>
+                            </div> 
+                          
                             <div class="carousel-item">
                                 <img src="https://i.imgur.com/kcY6Fp2.jpg?1"  class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
@@ -338,7 +342,15 @@
                                     <p>Mira lo mas reciente League of Legends</p>
                                 </div>
                             </div>
-                        </div>
+                        
+                            <div class="carousel-item">
+                                <img src="https://i.imgur.com/kcY6Fp2.jpg?1"  class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Lo mas nuevo en LoL</h2>
+                                    <p>Mira lo mas reciente League of Legends</p>
+                                </div>
+                            </div>   
+
                         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
@@ -358,6 +370,7 @@
 
                         <div class="col mb-4">
 
+                  
                             <div class="card">
 
 
@@ -368,13 +381,14 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">Card titulo</h5>
                                     <p class="card-text">Texto del post</p>
                                 </div>
                                 <div class="card-footer">
                                     <small class="text-muted">Last updated 3 mins ago</small>
                                 </div>
                             </div>
+
 
                             <div class="wrapper">
                                 <div class="divider div-transparent"></div>

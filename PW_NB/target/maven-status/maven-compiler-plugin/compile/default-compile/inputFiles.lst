@@ -1,5 +1,12 @@
-C:\Users\Nahomi Soto\source\repos\7 Progra web\ProyectoPW1\PW_NB\src\main\java\pw\models\usuarioModel.java
-C:\Users\Nahomi Soto\source\repos\7 Progra web\ProyectoPW1\PW_NB\src\main\java\pw\models\noticiaModel.java
-C:\Users\Nahomi Soto\source\repos\7 Progra web\ProyectoPW1\PW_NB\src\main\java\pw\dao\userDAO.java
-C:\Users\Nahomi Soto\source\repos\7 Progra web\ProyectoPW1\PW_NB\src\main\java\pw\models\categoriasModel.java
-C:\Users\Nahomi Soto\source\repos\7 Progra web\ProyectoPW1\PW_NB\src\main\java\pw\utils\dbConnection.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\models\categoriasNoticiaModel.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\models\categoriasModel.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\controllers\UserController.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\models\usuarioModel.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\models\noticiaModel.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\models\baneosModel.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\models\comentariosModel.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\models\valoracionComentarioModel.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\models\valoracionNoticiaModel.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\dao\userDAO.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\models\favModel.java
+C:\Users\molec\Documents\7o semestre\progra web\Avance\Proyecto_PW1\PW_NB\src\main\java\pw\utils\dbConnection.java
