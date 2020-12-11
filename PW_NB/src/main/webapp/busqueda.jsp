@@ -28,7 +28,7 @@
 
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="/CSS/homepage.css">
+        <link rel="stylesheet" type="text/css" href="homepage.css">
         <script src="/JS/Main.js"></script>
     </head>
 

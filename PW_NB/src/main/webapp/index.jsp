@@ -4,9 +4,11 @@
     Author     : Nahomi Soto
 --%>
 
+
 <%@page import="pw.controllers.UserControllerLogIn" %>
 <%@page import="pw.models.usuarioModel" %>
-
+<%@page import="java.util.List"%>
+<%@page import="pw.models.noticiaModel"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
