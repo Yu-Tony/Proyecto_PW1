@@ -54,7 +54,7 @@ public class userDAO {
         return 0;
     }
      
-      
+      //GET USERS
     public static List<usuarioModel> getUsers() {
         List<usuarioModel> users = new ArrayList<>();
         try {
