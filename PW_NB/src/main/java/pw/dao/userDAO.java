@@ -14,6 +14,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -51,7 +53,8 @@ public class userDAO {
         }
         return 0;
     }
-
+     
+      
     public static List<usuarioModel> getUsers() {
         List<usuarioModel> users = new ArrayList<>();
         try {
@@ -82,6 +85,57 @@ public class userDAO {
         } finally {
             return users;
         }
+    }
+
+  
+     public static int signInUser(usuarioModel user) {
+        Connection con = null;
+        try {
+            con = dbConnection.getConnection();
+            CallableStatement statement = con.prepareCall("call InsUsuario (?,?,?,?,?,?,?,?,?)");
+            statement.setString(1, user.getUsername());
+            statement.setString(2, user.getEmail());
+            statement.setString(3, user.getNombre_publico());
+            statement.setString(4, user.getContraseña());
+            statement.setString(5, user.getFoto_perfil());
+            statement.setInt(6, user.getUsertype());
+            statement.setString(7, user.getFb());
+            statement.setString(8, user.getTwt());
+            statement.setString(9, user.getInsta());
+      
+            return statement.executeUpdate();
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException ex) {
+                    Logger.getLogger(userDAO.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+        return 0;
+    }
+
+        public static usuarioModel logInUser(usuarioModel user) {
+        try {
+            Connection con = dbConnection.getConnection();
+            CallableStatement statement = con.prepareCall("call Login(?,?)");
+            statement.setString(1, user.getUsername());
+            statement.setString(2, user.getContraseña());
+            
+            ResultSet result = statement.executeQuery();
+            while (result.next()) {
+                String contraseña = result.getString("contraseña");
+                String username = result.getString("username");
+                String nombre_publico = result.getString("nombre_publico");
+                return new usuarioModel(contraseña, username, nombre_publico);
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+        return null;
     }
     
 }

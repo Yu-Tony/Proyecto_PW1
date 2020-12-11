@@ -22,6 +22,58 @@ public class usuarioModel {
     private String twt;
     private String insta;
 
+
+    
+        public usuarioModel(String username, String email, String nombre_publico, String contraseña) {
+        this.username = username;
+        this.email = email;
+        this.nombre_publico = nombre_publico;
+        this.contraseña = contraseña;
+   
+    }
+    
+         public usuarioModel(String username, String email, String nombre_publico, String contraseña, String foto_perfil) {
+        this.username = username;
+        this.email = email;
+        this.nombre_publico = nombre_publico;
+        this.contraseña = contraseña;
+        this.foto_perfil = foto_perfil;
+    
+    }
+    
+        public usuarioModel(String username, String email, String nombre_publico, String contraseña, String foto_perfil, int usertype) {
+        this.username = username;
+        this.email = email;
+        this.nombre_publico = nombre_publico;
+        this.contraseña = contraseña;
+        this.foto_perfil = foto_perfil;
+        this.usertype = usertype;
+    
+    }
+
+    
+        public usuarioModel(String username, String email, String nombre_publico, String contraseña, String foto_perfil, int usertype, String fb) {
+        this.username = username;
+        this.email = email;
+        this.nombre_publico = nombre_publico;
+        this.contraseña = contraseña;
+        this.foto_perfil = foto_perfil;
+        this.usertype = usertype;
+        this.fb = fb;
+    }
+
+    
+    public usuarioModel(String username, String email, String nombre_publico, String contraseña, String foto_perfil, int usertype, String fb, String twt) {
+        this.username = username;
+        this.email = email;
+        this.nombre_publico = nombre_publico;
+        this.contraseña = contraseña;
+        this.foto_perfil = foto_perfil;
+        this.usertype = usertype;
+        this.fb = fb;
+        this.twt = twt;
+    }
+
     public usuarioModel(String username, String email, String nombre_publico, String contraseña, String foto_perfil, int usertype, String fb, String twt, String insta) {
         this.username = username;
         this.email = email;
@@ -32,6 +84,10 @@ public class usuarioModel {
         this.fb = fb;
         this.twt = twt;
         this.insta = insta;
+    }
+
+    public usuarioModel(String username, String email, String password) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     
